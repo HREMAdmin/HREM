@@ -1,0 +1,15 @@
+﻿<Window x:Class="HREMModul.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="350" Width="525">
+    <Grid>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <StackPanel>
+            <TextBlock Text="Fornavn: Benny"></TextBlock>
+            <TextBlock Text="Efternavn: Benny"></TextBlock>
+            <Button Name="Dialog" Command="{Binding dialog}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
